@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <bug_report>
+  <Scope> Win10, Office 2010 </Scope>
+  <Summery> При обновлении баг репорта, перестала выгружаться строка summary </Summery>
+  <Severity> medium </Severity>
+  <Priority> Minor </Priority>
+    <Steps> 
+    <Steps1> Шаг1 </Steps1>
+    <Steps2> Шаг2 </Steps2>
+    <Steps3> Шаг3 </Steps3>
+    </Steps>
+    </bug_report>
