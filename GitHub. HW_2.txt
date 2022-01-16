@@ -9,8 +9,8 @@
 - CheckLists
      git branch CheckLists
 
-- Bag Reports
-     git checkout -b Bag_Reports (создал ветку и зашел в нее сразу)
+- Bug Reports
+     git checkout -b Bug_Reports (создал ветку и зашел в нее сразу)
      git branch (посмотрел все ветки)
      git checkout master (перешел/вернулся в ветку master)
 
@@ -26,8 +26,9 @@
 2. Запушить все ветки на внешний репозиторий
          git push master --all
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
-             vim bag_reports.txt
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+          git checkout Bug_Reports    
+          vim bug_reports.txt
 ___________________________________________________________________________________________________________________________________________
 ==Шапка==
       =Короткое описание (Summary) 
@@ -50,15 +51,14 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________________________________________
 
 4. Запушить структуру багрепорта на внешний репозиторий
-               git push
+         git add .
+         git commit -m "add bug_reports.txt" 
+         git push
 
-5. Вмержить ветку Bag Reports в Main
-        идем в ветку Main
-        git merge Bag_Reports
-        vim bag_reports.txt
-        git add .
-        git commit -m "merge"
-
+5. Вмержить ветку Bug Reports в Main
+        git checkout master
+        git merge Bug_Reports
+              
 6. Запушить main на внешний репозиторий.
         git push
 
